@@ -1,0 +1,903 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo, middle options, and right options */
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.navbar .logo img {
+  max-width: 100px; /* Adjust logo size as needed */
+  height: auto;
+}
+
+.navbar .middle-options {
+  display: flex;
+  gap: 20px; /* Space between options */
+  align-items: center;
+}
+
+.navbar .middle-options a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.navbar .middle-options a:hover {
+  color: green; /* Hover effect */
+}
+
+.navbar .right-options {
+  display: flex;
+  gap: 20px; /* Space between Login and Sign up */
+  align-items: center;
+}
+
+.navbar .right-options a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.navbar .right-options a:hover {
+  color: green; /* Hover effect */
+}
+
+.navbar .right-options .signup-button {
+  background-color: green;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.navbar .right-options .signup-button:hover {
+  background-color: darkgreen; /* Hover effect for signup button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar .middle-options,
+  .navbar .right-options {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: white;
+}
+
+.hero .content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero h1 .lesson {
+  font-weight: bold;
+  color: black;
+  display: block; /* Ensures "from 8 years" is on a new line */
+}
+
+.hero h1 .years {
+  color: green;
+  font-size: 40px; /* Adjust size as needed */
+  display: block; /* Ensures it's directly below "Lessons and insights" */
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.hero .register-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hero .register-button:hover {
+  background-color: darkgreen; /* Hover effect */
+}
+
+.hero .image-container {
+  max-width: 50%;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero .content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h1 .years {
+    font-size: 32px; /* Adjust size for smaller screens */
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero .image-container {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+/* Community Section Styles */
+.community {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+}
+
+.community .header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.community .header p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.community .cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between cards */
+  flex-wrap: wrap;
+}
+
+.community .card {
+  background-color: #f5f5f5; /* Light gray background for cards */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.community .card .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.community .card h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.community .card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .community .header h1 {
+    font-size: 28px;
+  }
+
+  .community .header p {
+    font-size: 16px;
+  }
+
+  .community .cards {
+    gap: 20px;
+  }
+
+  .community .card {
+    max-width: 100%;
+  }
+}
+
+/* Unlock Section Styles */
+.unlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: white;
+}
+
+.unlock .content {
+  max-width: 50%;
+}
+
+.unlock h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.unlock p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.unlock .learn-more-button {
+  background-color: green; /* Green background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.unlock .learn-more-button:hover {
+  background-color: darkgreen; /* Darker green on hover */
+}
+
+.unlock .image-container {
+  max-width: 50%;
+}
+
+.unlock img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .unlock {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .unlock .content {
+    max-width: 100%;
+  }
+
+  .unlock h1 {
+    font-size: 28px;
+  }
+
+  .unlock p {
+    font-size: 16px;
+  }
+
+  .unlock .image-container {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+/* Achievements Section Styles */
+.achievements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: white;
+}
+
+.achievements .content {
+  max-width: 40%; /* Adjust as needed */
+}
+
+.achievements h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.achievements h1 .helping {
+  font-weight: bold;
+  color: black;
+  display: block; /* Ensures "business reinvent itself" is on a new line */
+}
+
+.achievements h1 .business {
+  font-weight: bold;
+  color: green;
+  display: block; /* Ensures it's directly below "Helping a local" */
+}
+
+.achievements p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 0; /* Remove margin to align with icons */
+}
+
+.achievements .stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  gap: 20px; /* Space between items */
+  max-width: 50%; /* Adjust as needed */
+}
+
+.achievements .stat {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px; /* Smaller border radius for flatter look */
+  width: 200px; /* Longer in length */
+  height: 100px; /* Flatter height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements .stat .icon {
+  width: 30px; /* Smaller icon */
+  height: 30px; /* Smaller icon */
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+.achievements .stat .number {
+  font-size: 24px; /* Smaller font size */
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.achievements .stat .label {
+  font-size: 14px; /* Smaller font size */
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .achievements {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .achievements .content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .achievements h1 {
+    font-size: 36px;
+  }
+
+  .achievements h1 .business {
+    font-size: 32px; /* Adjust size for smaller screens */
+  }
+
+  .achievements p {
+    font-size: 16px;
+  }
+
+  .achievements .stats {
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .achievements .stat {
+    width: 150px; /* Adjust width for smaller screens */
+    height: 80px; /* Adjust height for smaller screens */
+  }
+
+  .achievements .stat .number {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .achievements .stat .label {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+}
+
+
+/* Calender Section Styles */
+.calender {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: white;
+}
+
+.calender .content {
+  max-width: 50%;
+}
+
+.calender h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.calender p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.calender .learn-more-button {
+  background-color: green; /* Green background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.calender .learn-more-button:hover {
+  background-color: darkgreen; /* Darker green on hover */
+}
+
+.calender .image-container {
+  max-width: 50%;
+}
+
+.calender img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calender {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .calender .content {
+    max-width: 100%;
+  }
+
+  .calender h1 {
+    font-size: 28px;
+  }
+
+  .calender p {
+    font-size: 16px;
+  }
+
+  .calender .image-container {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* Customer Section Styles */
+.customer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: white;
+}
+
+.customer .logo {
+  max-width: 20%; /* Adjust logo size as needed */
+}
+
+.customer .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.customer .content {
+  max-width: 70%; /* Adjust text content width */
+}
+
+.customer .content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.customer .author {
+  margin-bottom: 20px;
+}
+
+.customer .author .name {
+  font-size: 20px;
+  font-weight: bold;
+  color: green; /* Green color for Tim Smith */
+  display: block;
+}
+
+.customer .author .organization {
+  font-size: 16px;
+  color: #555;
+  display: block;
+}
+
+.customer .icons-and-link {
+  display: flex;
+  align-items: center;
+  gap: 450px; /* Space between icons and link */
+}
+
+.customer .icons {
+  display: flex;
+  gap: 50px; /* Space between icons */
+}
+
+.customer .icons img {
+  width: 40px; /* Adjust icon size as needed */
+  height: 40px; /* Adjust icon size as needed */
+}
+
+.customer .meet-customers {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: green; /* Green color for text */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.customer .meet-customers .arrow {
+  margin-left: 10px;
+  font-size: 20px;
+  color: green; /* Green color for arrow */
+}
+
+.customer .meet-customers:hover {
+  color: darkgreen; /* Darker green on hover */
+}
+
+.customer .meet-customers:hover .arrow {
+  color: darkgreen; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .customer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .customer .logo {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .customer .content {
+    max-width: 100%;
+  }
+
+  .customer .content p {
+    font-size: 16px;
+  }
+
+  .customer .author .name {
+    font-size: 18px;
+  }
+
+  .customer .author .organization {
+    font-size: 14px;
+  }
+
+  .customer .icons-and-link {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .customer .icons {
+    justify-content: center;
+  }
+}
+
+
+
+.community-updates {
+  background-color: #fff;
+  padding: 40px;
+  max-width: 1500px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.updates-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.update-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.update-card img {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+.update-card .content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.update-card h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.update-card a {
+  color: #28a745; /* Green color for Readmore */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.update-card a:hover {
+  text-decoration: underline;
+}
+.header{
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .updates-container {
+      flex-direction: column;
+  }
+
+  .update-card {
+      margin-bottom: 20px;
+  }
+}
+
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.demo-button {
+  background-color: #28a745; /* Green background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Space between text and arrow */
+  transition: background-color 0.3s ease;
+}
+
+.demo-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.arrow {
+  font-size: 1.2em;
+}
+
+/* Dark Footer */
+.dark-footer {
+  background-color: #333; /* Dark background */
+  color: #fff;
+  width: 100%;
+  padding: 40px 20px;
+  
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* Space between sections */
+}
+
+/* First Section: Logo, Copyright, and Small Logos */
+.logo-section {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.nexcent-logo {
+  width: 150px; /* Adjust logo size */
+  height: auto;
+}
+
+.copyright {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.small-logos {
+  display: flex;
+  gap: 15px; /* Space between logos */
+}
+
+.small-logos img {
+  width: 30px; /* Adjust small logo size */
+  height: auto;
+  filter: brightness(0) invert(1); /* Make logos white */
+}
+
+/* Second Section: Company and Support */
+.links-section {
+  flex: 2;
+  display: flex;
+  gap: 40px; /* Space between Company and Support */
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+/* Third Section: Stay up to date */
+.newsletter-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.newsletter-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  background-color: #444;
+  color: #fff;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #28a745; /* Green button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .logo-section {
+      align-items: center;
+  }
+
+  .links-section {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .newsletter-form {
+      flex-direction: column;
+  }
+
+  .newsletter-form button {
+      width: 100%;
+  }
+}
